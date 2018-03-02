@@ -6,18 +6,47 @@
     <title>Фотостудия М-54</title>
 </head>
 <body>
-    <div class="firstScreen">
+
+    <div class="upLine" id="upLine">
+        <div class="port">
+            <img src="img/port.jpg" alt="">
+            <h2>Портрет</h2>
+        </div>
+
+        <div class="lingerie">
+            <img src="img/ling.jpg" alt="">
+            <h2>Белье</h2>
+        </div>
+    </div>
+
+    <div class="centerLine">
          <div class="logo">
             <img id="firstScreenImg" src="img/Camera.png" alt="">
         </div>
             <h2 id="firstScreenTitle">Фотостудия М-54</h2>
+            <h3>Только лучшее... Только для лучших</h3>
+    </div>
+
+    <div class="downLine" id="downLine">
+        <div class="nude">
+            <img src="img/nude.jpg" alt="">
+            <h2>Nude</h2>
+        </div>
+        <div class="contact">
+            <h2>Контакты</h2>
+        </div>
     </div>
 
     <script>
         setTimeout(function () {
             document.getElementById('firstScreenTitle').style.opacity = 1;
         },1000);
-
+        setTimeout(function () {
+            document.getElementById('downLine').style.opacity = 1;
+        },2000);
+        setTimeout(function () {
+        document.getElementById('upLine').style.opacity = 1;
+        },2000);
 
     </script>
 </body>

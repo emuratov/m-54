@@ -1,22 +1,46 @@
 body {
   background-color: #140024;
 }
-.firstScreen {
-  padding-top: 20%;
+body h2,
+body h3 {
+  color: gray;
+  text-align: center;
+}
+.upLine {
+  opacity: 0;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.upLine img {
+  width: 150px;
+}
+.centerLine {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.firstScreen .logo img {
+.centerLine .logo img {
   width: 150px;
   filter: invert(50%);
   transition: transform .5s;
 }
-.firstScreen .logo img:hover {
+.centerLine .logo img:hover {
   transform: rotate(-45deg);
 }
-.firstScreen #firstScreenTitle {
+.centerLine #firstScreenTitle {
   opacity: 0;
   transition: 1s;
   color: gray;
+}
+.downLine {
+  opacity: 0;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.downLine img {
+  width: 150px;
 }
